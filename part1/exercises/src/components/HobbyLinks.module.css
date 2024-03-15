@@ -1,0 +1,20 @@
+.hobbyText {
+    color: rgb(100, 12, 12);
+ }
+ 
+ .hobbyHeading {
+    color: black;
+    text-decoration :underline;
+ }
+ 
+ .hobbyText {
+    color: purple;
+    font-size: 1.3vw;
+    text-align: right;
+   
+    
+ }
+ 
+ .hobbyHeading {
+    text-align: right;
+ }

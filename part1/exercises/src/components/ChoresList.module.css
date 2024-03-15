@@ -1,7 +1,16 @@
 .choresText {
-   color: black;
+   color: rgb(207, 154, 154);
 }
 
 .choresHeading {
    color: black;
+}
+.ChoresText {
+   color: purple;
+   font-size: 1.3vw;
+   text-align: left;
+}
+
+.choresHeading {
+   text-align: left;
 }
