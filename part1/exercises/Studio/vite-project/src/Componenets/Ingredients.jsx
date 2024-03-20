@@ -1,7 +1,7 @@
-import  ReceipeIngredints from './ingredients.module.css';
+import  styles from './ingredients.module.css';
 import React from 'react';
     const ReceipeIngredients = () =>{
-    let ingredients= ["coconutoil","brownsugar","flour","whitechocolate","egg"]; 
+    let ingredients= ["coconutoil"," darkbrownsugar","flour","whitechocolate","egg"]; 
     return(
         <div>
 <h3>Recipe Ingredients</h3>
@@ -15,4 +15,4 @@ import React from 'react';
 </div>
     );
     };
-   export default Receipeingredients; 
+   export default ReceipeIngredients; 

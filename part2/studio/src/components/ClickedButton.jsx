@@ -1,18 +1,17 @@
 import './styling.css';
-
-function ClickedButton(){
-
-  function handleClick (){
-    alert ("you have removed this pin!");
-} 
-return (
-  < button id ="Clickedbutton" onClick = {handleClick}>
-   saved
-   </button>
+function ClickedButton() {
   
- 
-  );
-  } 
+    function handleClick() {
+      alert("You have removed this pin!");
+    }
+    return (
+      <button id="ClickedButton" onClick={handleClick}>
+        Saved
+      </button>
+    );
+  
+  
+}
 
 export default ClickedButton;
 

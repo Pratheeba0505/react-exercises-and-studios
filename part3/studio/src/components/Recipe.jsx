@@ -1,23 +1,43 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   
+   let authorLink = "https://www.ambitiouskitchen.com/";
+   let authorPhoto = "https://www.ambitiouskitchen.com/brown-butter-chocolate-chip-cookies/";
+   let authorName = "Monique Volz";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} 
+         width="200px"
+         />
          <div>
             <h3>{authorName}</h3>
-            <a href={authorLink}></a> 
+            <a href={authorLink}></a>
          </div>
       </div>
    );
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = [
+      'coconut oil',
+      'dark brown sugar',
+      'vanilla',
+      'aloman extract',
+      'egg',
+      'flour',
+      'rolled oats',
+      'baking soda',
+      'salt',
+      
+
+   ];
+
+   let ingredientsItems = ingredients.map((ingredient, index) =>{
+      return <li key={index}>{ingredient}</li>;
+   });
+  
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +56,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>white chocolate cookies</h1>
+            <p> cookies bustring with juicy </p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,9 +69,11 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
-   );
-}
+      <img src="https://www.ambitiouskitchen.com/brown-butter-chocolate-chip-cookies/" alt="" className="imageUpdates"
+   height="450px"
+   />
+      );
+   }
 
 export default function RecipeDisplay () {
    return(

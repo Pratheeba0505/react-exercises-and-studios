@@ -1,23 +1,25 @@
 
-import { useState } from 'react'
 import './App.css'
-import Receipeingredients from './Componenets/Ingredients'
+import RecipeDescription from './Description'
+import RecipePhoto from './Photos';
 
 function App() {
 
   return (
-    <>
-      <div className="App">
-        <div> 
-          <Receipephoto/>
-        </div>
-        <div>
-          <ReceipeDescription />;
-          <Receipeingredients/>;
-        </div>
-      </div>
-    </>
-  );
+   
+    <div className="App">
+    <div className="recipePhotoBlock"></div>
+    <div>
+        <RecipePhoto/>
+    </div>
+    <div>
+  <RecipeDescription />
+  <RecipeIngredients />
+  </div>
+  </div>
+)
 }
+ 
+        
 
 export default App;

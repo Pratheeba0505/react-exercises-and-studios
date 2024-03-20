@@ -1,4 +1,3 @@
-
 import recipedata from './recipe.json';
 import './styling.css';
 function AuthorInfo() {
@@ -28,8 +27,6 @@ return <div key= {recipe.name}>{recipeAuthor}</div>
  }
  
  export default AuthorInfo;
- 
- 
  
  //import styles.css
  //import json file for author info

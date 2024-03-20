@@ -1,4 +1,3 @@
-
 import recipedata from "./recipe.json";
 
 function RecipeName() {
@@ -13,7 +12,5 @@ let recipeName = recipedata.map(recipe => {
 }
 
 export default RecipeName;
-
-
 
 //import return the name of the recipe as a level 1 header

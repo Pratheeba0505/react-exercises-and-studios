@@ -1,33 +1,38 @@
- import styles from './Description.module.css';
- import react from 'react';
- const ReceipeAuthor = () => {
- let receipe =  " white chocolate cookies";
- let receipeShortDesc = "white chocolate,coconut,bluberry";
-let authorLink =" https://www.ambitiouskitchen.com/";
-let authorPhoto  = " https://www.ambitiouskitchen.com/wp-content/uploads/fly-images/87525/9780593581650-1-918x1138-1-105x0.png" ;
-let authorName = " Montique";
-return (
-    <div className = {styles.recipeAuthorBlock}>
-      <img src={authorPhoto} alt ={authorName}  className={styles.imageUpdates} />
-      <div>
-         <h3>{authorName}</h3>
-         <a href={authorLink}> Ambitious kitchen </a>
-      </div>
-   </div>
-);
-class ReceipeDescriptipon extends React.Component{
-  render(){
-return(
-    <div>
-        <div>
-            <h1> { receipeTitle} </h1>
-            <p> { receipeShortDes} </p>
-        </div>
-        <ReceipeAuthor/>
-    </div>
-);
- 
+import styles from './Description.module.css';
+import { Component } from 'react';
+const RecipeAunthor = ()=>{
+    let authorLink = "https://www.ambitiouskitchen.com/"
+    let authorPhoto = "src=https://www.ambitiouskitchen.com/wp-content/uploads/2021/11/Crispy-Smashed-Potatoes-with-Garlic-Feta-Sauce-4-594x594.jpg"
+    let authorName = "Monique Volz";
 
+    return (
+        <div className = {styles.recipeAuthorBlock}>
+           <img src={authorPhoto} 
+          alt={authorName} 
+
+           className={styles.imageUpdates} />
+           <div>
+              <h3>{authorName}</h3>
+              <a href={authorLink}>Ambitious kitchen</a> 
+           </div>
+        </div>
+     );
+
+
+     
 }
-} 
-export  default ReceipeDescription;
+ class RecipeDescription extends Component{
+    render(){
+        return(
+<div> 
+   <div>
+      <h1>Recipe Title</h1>
+      <p>Short recipe description</p>
+   </div>
+   <RecipeAuthor />
+</div>
+        );
+    }
+ }
+
+ export default RecipeDescription;
